@@ -4,6 +4,8 @@
 
 let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
 
-let resultado = colors.map()
+let resultado = colors.map((c,index) =>index + "-" + c )
 
 console.log(resultado); // ['0-Blue', '1-Green', '2-Red', '3-Orange', '4-Violet', '5-Indigo', '6-Yellow']
+
+    
