@@ -57,10 +57,13 @@ const items = [
 ];
 
 // Usa el método .some para averiguar si existe alguna tarea que contenga el texto "Ballena". Piensa bien que campo deberías comprobar.
-
-console.log(items.some()); //TODO. Resultado esperado: false
+const even = (item) => item.text .includes("Ballena");
+console.log(items.some(even)); //TODO. Resultado esperado: false
 
 // Ahora usa el método .some para averiguar si existe una tarea etiquetada con un tag "ES6" en alguno de los elementos del array.
 
-console.log(items.some()); //TODO. Resultado esperado: true (la última!)
+// console.log(items.some()); //TODO. Resultado esperado: true (la última!)
 
+const hasES6Tag = (item) => item.Tags.includes("ES6");
+
+console.log(items.some(hasES6Tag));
